@@ -1,0 +1,187 @@
+/**********************************************************************************
+/**********************************************************************************
+
+							      CSS TUTORIAL
+
+
+// Wanna learn great things about CSS? Go to: http://lea.verou.me/projects/#
+
+//**********************************************************************************
+//*********************************************************************************/
+
+body, html /*body o html para que funcione bn en todos los navegadores*/
+{
+	/*
+		background = background-color: specifies the background color of an element.
+		Ex: http://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_elements
+
+		background-image:url('image.gif'); specifies an image to use as the background of 
+										an element. By default, the image is repeated 
+										so it covers the entire element.
+			background-repeat:repeat-x; repeat image horizontally
+			background-repeat:repeat-y; repeat image vertically
+			background-repeat:no-repeat; Showing the image only once
+			background-position:right top; Imagen al tope y pegado a la derecha
+
+			Ex: http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_position
+	*/
+	background: #CCC;
+
+	/*
+		color => Specifies the text color.
+		Note: Color is defined by name, hexadecimal format and rgb
+	*/
+	color: rgb(51,51,51);
+	font-family: Arial;
+
+	/*
+		The CSS margin properties define the space around elements.
+		
+		Normally:
+		margin-top, margin-bottom, margin-right, margin-left
+		
+		Shorthand property:
+			margin: 25px; => (all four margins are 25px)
+			margin: 25px 50px; => (top and bottom margins are 25px, right and left margins are 50px)
+			margin: 25px 50px 75px; => (top, right and left, bottom)
+			margin: 25px 50px 75px 100px; => (top, right, bottom, left)
+
+		Ex: http://www.w3schools.com/css/tryit.asp?filename=trycss_margin_shorthand
+	*/
+	margin: 10;
+	
+	/*
+		The CSS padding properties define the space between the element border and 
+	  	the element content.
+
+		Normally:
+		padding-top, padding-bottom, padding-right, padding-left
+
+		Shorthand property:
+		padding: 25px; => (all four paddings are 25px)
+		padding: 25px 50px; => (top and bottom paddings are 25px, right and left paddings are 50px)
+		padding: 25px 50px 75px; => (top, right and left, bottom)
+		padding: 25px 50px 75px 100px; => (top, right, bottom, left)
+
+		Ex: http://www.w3schools.com/css/tryit.asp?filename=trycss_padding_sides
+	  	*/
+	padding: 0;
+}
+
+#div5
+{
+	background-color: #FFFFFF;
+
+	/*
+		text-align => specifies the horizontal alignment of text in an element.
+		text-align:center;
+		text-align:left;
+		text-align:right;
+		text-align:justify;
+		
+		Ex: http://www.w3schools.com/cssref/playit.asp?filename=playcss_text-align&preval=justify
+	*/
+	text-align: center;
+	height: 50px;
+	width: 300px;
+	margin: 5% auto;
+}
+
+#div6
+{
+	/*
+		The display property defines how a certain HTML element should be displayed.
+		block => The element is displayed as a block-level element
+		inline => This is default. The element is displayed as an inline-level element (like span)
+
+		Ex: http://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=block;
+	*/
+	display: block;
+	background-color: #000;
+	height: 50px;
+	width: 300px;
+	margin: 5% auto;
+}
+
+.div7
+{
+	background-color: red;
+}
+
+.div8
+{
+	color: white;
+	background-color: black;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#div10
+{
+	/*como el elemento no esta embebido aumenta el tamaño por que cambia 
+	  el borde con respecto a su contenedor, en este caso el document */
+	padding: 15px;
+
+	/* The border-radius property is a shorthand property for setting the four border-*-radius properties. 
+	   This property allows you to add rounded borders to elements!
+
+		border-radius:10%; Defines the shape of the corners in %
+				50% es un ovalo perfecto  
+
+		Ex: http://www.w3schools.com/cssref/playit.asp?filename=playcss_border-radius
+    */
+	border-radius: 60px 0 60px 0;
+}
+
+#div9, #div10
+{
+	background-color: #0080FF;
+	display: block;
+	height: 100px;
+	width: 400px;
+
+	/* auto se encarga de centrar por que el navegador calcula la margen */
+	margin: 5px auto;
+}
+
+#div10 p
+{
+	padding-top: 20px;
+	padding-left: 45px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#lista1
+{
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.sublista1
+{
+	background-color: #088A29;
+	margin: 5px auto;
+	height: 30px;
+	width: 100%;
+}
+
+#boton1, #boton2, #boton3
+{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+}
+
+#div11, #div12
+{
+	background-color: #FE2E64;
+	height: 50px;
+	display: block;
+	width: 400px;
+	margin: 2px auto;
+}
+
+
+/*------------------------------------------------------------------------------*/
