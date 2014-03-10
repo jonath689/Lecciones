@@ -1,10 +1,13 @@
+/*
+* miles sirve para redondear el numero, pero es prescindible
+*/
 HTML:
 
     <tr>
       <td align="left">Total:</td>
     <td>
       <input name="total" type="text" id="total" 
-             onblur="this.value=formatCurrency(this.value);" 
+             onblur="this.value=formatCurrency(miles(this.value));" 
              onkeypress="return numeros(event)"/>
     </td>
     </tr>
