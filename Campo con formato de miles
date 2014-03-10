@@ -1,9 +1,12 @@
 HTML:
 
     <tr>
-    <td  align="left" class="celda">Total:</td>
-    <td><input name="total" type="text" id="total" onblur="this.value=formatCurrency(this.value);" onkeypress="return numeros(event)"/>
-      (*)</td>
+      <td align="left">Total:</td>
+    <td>
+      <input name="total" type="text" id="total" 
+             onblur="this.value=formatCurrency(this.value);" 
+             onkeypress="return numeros(event)"/>
+    </td>
     </tr>
 
 Javascript:
