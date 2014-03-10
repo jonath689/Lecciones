@@ -47,3 +47,14 @@ function miles(numero)
 	var result=Math.round(original/1000)*1000;
 	return result;
 }
+///////////////////////////////////////////////////////////////////
+function Extract(Obj)
+{
+	var str=Obj.replace(/,/g, "");
+	if(str==""){
+			return "0";
+	}else{
+		var iNumero=new Number(parseInt(str,10));
+		return(iNumero);
+	}
+}
